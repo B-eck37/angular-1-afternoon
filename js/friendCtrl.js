@@ -1,4 +1,5 @@
-[
+angular.module("myApp").controller("friendCtrl", function($scope) {
+    $scope.friends = [
   {
     name: "Preston McNeil",
     pic_square:
@@ -248,3 +249,15 @@
     friend_count: 855
   }
 ];
+    
+    $scope.filters = {
+        name: '',
+        state: '',
+    };
+
+    $scope.sorts = {
+        property: "name",
+        direction: "+",
+    }
+
+});
